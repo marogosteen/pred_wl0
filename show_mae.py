@@ -10,7 +10,7 @@ def loadResultData(path: str):
             data.append(float(line))
     return data
 
-truedata = np.array(loadResultData("output/wl0/predict_data/label.csv"))
-predicted = np.array(loadResultData("output/wl0/predict_data/predict.csv"))
+truedata = np.array(loadResultData("output/predict_data/label.csv"))
+predicted = np.array(loadResultData("output/predict_data/predict.csv"))
 
 print("MAE: ", np.mean(np.abs(truedata - predicted)))

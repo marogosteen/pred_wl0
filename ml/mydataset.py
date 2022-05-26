@@ -3,13 +3,6 @@ import torch
 from torch.utils.data import Dataset
 
 
-# def splitdata(data: np.ndarray, train_rate: float):
-#     # np.random.shuffle(data)
-#     train_size = int(len(data) * train_rate)
-#     traintensor = torch.Tensor(data[:train_size])
-#     evaltensor = torch.Tensor(data[train_size:])
-#     return traintensor, evaltensor
-
 def splitdata(data: np.ndarray, train_rate: float):
     np.random.shuffle(data)
     train_rate = 1 - train_rate

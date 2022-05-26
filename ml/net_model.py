@@ -5,7 +5,7 @@ class Wl0_Net(nn.Module):
     def __init__(self):
         super(Wl0_Net, self).__init__()
         self.linearSequential = nn.Sequential(
-            nn.Linear(1, 64),
+            nn.Linear(6, 64),
             nn.ReLU(),
             nn.Linear(64, 512),
             nn.ReLU(),
